@@ -52,8 +52,14 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'noReset',
 			'bool');
 		addOption(option);
-
+		
 		#if mobile
+		var option:Option = new Option('Mobile Arrow Layout',
+			'Use the mobile-friendly note layout.',
+			'mobileArrowLayout',
+			'bool');
+		addOption(option);
+
 		var option:Option = new Option('Game Over Vibration',
 			"If checked, your device will vibrate at game over.",
 			'gameOverVibration',
