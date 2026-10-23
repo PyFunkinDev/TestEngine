@@ -1376,6 +1376,10 @@ class PlayState extends MusicBeatState
 
 				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
 				swagNote.mustPress = gottaHitNote;
+				#if mobile
+				if (ClientPrefs.data.mobileArrowLayout && !gottaHitNote)
+					swagNote.visible = false;
+				#end
 				swagNote.sustainLength = songNotes[2];
 				swagNote.gfNote = (section.gfSection && (songNotes[1]<4));
 				swagNote.noteType = songNotes[3];
@@ -1395,6 +1399,10 @@ class PlayState extends MusicBeatState
 
 						var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote), daNoteData, oldNote, true);
 						sustainNote.mustPress = gottaHitNote;
+						#if mobile
+						if (ClientPrefs.data.mobileArrowLayout && !gottaHitNote)
+							sustainNote.visible = false;
+						#end
 						sustainNote.gfNote = (section.gfSection && (songNotes[1]<4));
 						sustainNote.noteType = swagNote.noteType;
 						sustainNote.scrollFactor.set();
