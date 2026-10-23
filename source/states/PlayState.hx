@@ -980,6 +980,21 @@ class PlayState extends MusicBeatState
 
 			generateStaticArrows(0);
 			generateStaticArrows(1);
+			
+			#if mobile
+			if (ClientPrefs.data.mobileArrowLayout)
+			{
+				for (strum in opponentStrums)
+				{
+					var centerX:Float = strum.x + strum.width / 2;
+					strum.setGraphicSize(Std.int(strum.width * 0.4));
+					strum.updateHitbox();
+					strum.x = centerX - strum.width / 2;
+					strum.y = 35;
+				}
+			}
+			#end
+				
 			for (i in 0...playerStrums.length) {
 				setOnScripts('defaultPlayerStrumX' + i, playerStrums.members[i].x);
 				setOnScripts('defaultPlayerStrumY' + i, playerStrums.members[i].y);
