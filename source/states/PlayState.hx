@@ -1010,6 +1010,7 @@ class PlayState extends MusicBeatState
 					strum.x = opponentCenterX + (i - 1.5) * opponentSpacing - strum.width * 0.5;
 					strum.y = 35;
 				}
+			}
 			#end
 				
 			for (i in 0...playerStrums.length) {
