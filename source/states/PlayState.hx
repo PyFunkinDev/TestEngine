@@ -538,7 +538,7 @@ class PlayState extends MusicBeatState
 		FlxG.worldBounds.set(0, 0, FlxG.width, FlxG.height);
 		moveCameraSection();
 
-		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'healthBar', function() return health, 0, 2);
+		healthBar = new Bar(0, FlxG.height * (!(ClientPrefs.data.downScroll || ClientPrefs.data.mobileArrowLayout) ? 0.89 : 0.11), 'healthBar', function() return health, 0, 2);
 		healthBar.screenCenter(X);
 		healthBar.leftToRight = false;
 		healthBar.scrollFactor.set();
@@ -989,22 +989,27 @@ class PlayState extends MusicBeatState
 				for (i in 0...playerStrums.length)
 				{
 					var strum = playerStrums.members[i];
-					strum.setGraphicSize(Std.int(strum.width * 1.25));
+					strum.setGraphicSize(Std.int(strum.width * 1.1));
 					strum.updateHitbox();
 					strum.x = FlxG.width * 0.5 + (i - 1.5) * playerSpacing - strum.width * 0.5;
-					strum.y = FlxG.height - strum.height - 25;
+					strum.y = FlxG.height - strum.height - 60;
 					strum.downScroll = true;
 				}
 
+				var opponentCenterX:Float = 0;
 				for (strum in opponentStrums)
+					opponentCenterX += strum.x + strum.width * 0.5;
+				opponentCenterX /= opponentStrums.length;
+
+				var opponentSpacing:Float = Note.swagWidth * 0.4;
+				for (i in 0...opponentStrums.length)
 				{
-					var centerX:Float = strum.x + strum.width * 0.5;
+					var strum = opponentStrums.members[i];
 					strum.setGraphicSize(Std.int(strum.width * 0.4));
 					strum.updateHitbox();
-					strum.x = centerX - strum.width * 0.5;
+					strum.x = opponentCenterX + (i - 1.5) * opponentSpacing - strum.width * 0.5;
 					strum.y = 35;
 				}
-			}
 			#end
 				
 			for (i in 0...playerStrums.length) {
