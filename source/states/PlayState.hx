@@ -984,12 +984,24 @@ class PlayState extends MusicBeatState
 			#if mobile
 			if (ClientPrefs.data.mobileArrowLayout)
 			{
+				var playerSpacing:Float = Note.swagWidth * 1.55;
+
+				for (i in 0...playerStrums.length)
+				{
+					var strum = playerStrums.members[i];
+					strum.setGraphicSize(Std.int(strum.width * 1.25));
+					strum.updateHitbox();
+					strum.x = FlxG.width * 0.5 + (i - 1.5) * playerSpacing - strum.width * 0.5;
+					strum.y = FlxG.height - strum.height - 25;
+					strum.downScroll = true;
+				}
+
 				for (strum in opponentStrums)
 				{
-					var centerX:Float = strum.x + strum.width / 2;
+					var centerX:Float = strum.x + strum.width * 0.5;
 					strum.setGraphicSize(Std.int(strum.width * 0.4));
 					strum.updateHitbox();
-					strum.x = centerX - strum.width / 2;
+					strum.x = centerX - strum.width * 0.5;
 					strum.y = 35;
 				}
 			}
