@@ -10,6 +10,8 @@
 > Art and logo — [EvgenPlay05](https://github.com/EvgenPlay05)
 >
 > Commit messages — GitHub Copilot
+>
+> AI Assistant — [arena.ai agent](https://arena.ai/agent/)
 ## Ideas
 
 | Idea                          | Who         | Status      | Done?  |
