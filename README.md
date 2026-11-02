@@ -122,4 +122,10 @@ _____________________________________
 >
 > Art and logo — [EvgenPlay05](https://github.com/EvgenPlay05)
 > 
-> deas
+## Ideas
+
+**Mobile layout** (in progress)
+> PyFunkinDev
+
+**Title & Main menu improvement** (planned)
+> EvgenPlay05
