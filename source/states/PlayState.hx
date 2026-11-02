@@ -488,7 +488,7 @@ class PlayState extends MusicBeatState
 		timeTxt.alpha = 0;
 		timeTxt.borderSize = 2;
 		timeTxt.visible = updateTime = showTime;
-		if(ClientPrefs.data.downScroll) timeTxt.y = FlxG.height - 44;
+		if(ClientPrefs.data.downScroll || ClientPrefs.data.mobileArrowLayout) timeTxt.y = FlxG.height - 44;
 		if(ClientPrefs.data.timeBarType == 'Song Name') timeTxt.text = SONG.song;
 
 		timeBar = new Bar(0, timeTxt.y + (timeTxt.height / 4), 'timeBar', function() return songPercent, 0, 1);
@@ -1007,7 +1007,7 @@ class PlayState extends MusicBeatState
 					var strum = opponentStrums.members[i];
 					strum.setGraphicSize(Std.int(strum.width * 0.4));
 					strum.updateHitbox();
-					strum.x = opponentCenterX + (i - 1.5) * opponentSpacing - strum.width * 0.5;
+					strum.x = opponentCenterX - FlxG.width * 0.06 + (i - 1.5) * opponentSpacing - strum.width * 0.5;
 					strum.y = 35;
 				}
 			}
