@@ -4,6 +4,19 @@
 
 ![logo](docs/img/TE.png)
 
+---
+> Test Engine — [PyFunkinDev](https://github.com/PyFunkinDev/)
+>
+> Art and logo — [EvgenPlay05](https://github.com/EvgenPlay05)
+> 
+## Ideas
+
+| Idea                          | Who         | Status      | Done?  |
+|-------------------------------|-------------|-------------|--------|
+| Mobile layout                 | PyFunkinDev | In progress | Partly |
+| Title & Main Menu improvement | EvgenPlay05 | Planned     | No     |
+---
+
 ## Customization:
 
 if you wish to disable things like *Lua Scripts* or *Video Cutscenes*, you can read over to `Project.xml`
@@ -117,15 +130,3 @@ _____________________________________
 * You can reset your Score on Freeplay/Story Mode by pressing Reset button.
 * You can listen to a song or adjust Scroll Speed/Damage taken/etc. on Freeplay by pressing Space.
 * You can enable "Combo Stacking" in Gameplay Options. This causes the combo sprites to just be one sprite with an animation rather than sprites spawning each note hit.
----
-> Test Engine — [PyFunkinDev](https://github.com/PyFunkinDev/)
->
-> Art and logo — [EvgenPlay05](https://github.com/EvgenPlay05)
-> 
-## Ideas
-
-**Mobile layout** (in progress)
-> PyFunkinDev
-
-**Title & Main menu improvement** (planned)
-> EvgenPlay05
