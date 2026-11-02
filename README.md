@@ -8,7 +8,8 @@
 > Test Engine — [PyFunkinDev](https://github.com/PyFunkinDev/)
 >
 > Art and logo — [EvgenPlay05](https://github.com/EvgenPlay05)
-> 
+>
+> Commit messages — GitHub Copilot
 ## Ideas
 
 | Idea                          | Who         | Status      | Done?  |
