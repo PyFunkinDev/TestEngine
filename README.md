@@ -1,6 +1,6 @@
-# Friday Night Funkin' - Psych Engine v0.7.3 Template
+# Friday Night Funkin' - Test Engine
 
-This Template for Making any Mods and Engines you want, with Mobile Support.
+**Test Engine is based on Psych Engine v0.7.3h**
 
 ![special](docs/img/special.png)
 
