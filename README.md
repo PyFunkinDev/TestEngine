@@ -2,7 +2,7 @@
 
 **Test Engine is based on Psych Engine v0.7.3h**
 
-![special](docs/img/TE.png)
+![logo](docs/img/TE.png)
 
 ## Customization:
 
