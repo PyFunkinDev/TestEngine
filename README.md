@@ -5,8 +5,7 @@
 ![logo](docs/img/TE.png)
 
 ---
-> Test Engine — [PyFunkinDev](https://github.com/PyFunkinDev/)
->
+> Test Engine — [ShapePlace](https://github.com/ShDev | In pr>
 > Art and logo — [EvgenPlay05](https://github.com/EvgenPlay05)
 >
 > Commit messages — GitHub Copilot
@@ -16,7 +15,7 @@
 
 | Idea                          | Who         | Status      | Done?  |
 |-------------------------------|-------------|-------------|--------|
-| Mobile layout                 | PyFunkinDev | In progress | Partly |
+| Mobile layout                 | ShapePlace | In progress | Partly |
 | Title & Main Menu improvement | EvgenPlay05 | Planned     | No     |
 ---
 
